@@ -1,0 +1,107 @@
+user:angluo (Luo, Angela)
+
+Karel Playgrounds is an interactive mobile platform designed to help people visualize problem-solving approaches with Karel the Robot, the educational programming language used in CS106A. 
+
+Specifically, users will be able to create “playgrounds” in which they can build their own worlds and move Karel around using predefined Karel functions. There are two kinds of objects that exist in a Karel world: beepers and obstacles. Karel can move around the world and pick up and put down beepers, all while avoiding crashing into obstacles and walls. Users can edit the dimensions of a world and customize the look and position of the beepers and obstacles.
+
+-------------------------------------------------
+The following is a list of specific details and features to keep in mind when testing the application:
+
+There are no worlds pre-loaded on the app - launching the app for the first time will show an empty list.
+
+To add a world, tap the plus button on the upper left corner. By default, a 5x5 world is created, with the name “Untitled”. You can also swipe to delete a world.
+
+You can tap on the “Edit” button in the top left corner to bring up the active editing mode. From here, you can delete worlds or click on each individual world’s “Edit” buttons to edit that world specifically.
+
+Editing a specific playground brings up a form, in which you can edit the name of the world and its dimensions. Worlds can range anywhere from a 1x1 world to a 10x10 world (in other words, the maximum number of rows/columns is 10; the minimum number is 1).
+
+When interacting with the actual Karel playground, Karel always starts at the bottom left corner of the world. This is a default Karel behavior.
+
+There are 6 buttons at the top of the world, representing different Karel functions. Tapping on one of these will make Karel execute that command (for example, turning left, or moving one space forward in the direction that Karel is facing).
+
+There are 4 “world builder” buttons below the grid. Only one of them can be toggled “on” at a time (or they can all be toggled “off”). 
+
+If Add Beeper/Add Obstacle is toggled on, you can click on a cell in the world to add a beeper or obstacle to that cell, respectively. You can only add at most one obstacle to a cell, but you can add numerous beepers to the same cell. Trying to add an obstacle to a cell that already has an obstacle will not do anything. Adding an obstacle to a cell that has beeper(s) in it will simply remove those beepers and place the obstacle in the cell. Vice versa for beepers. 
+
+If Remove Beeper/Remove Obstacle is toggled on, you can click on a cell in the world to remove a beeper or obstacle from that cell, respectively. 
+
+If none of the world builder buttons are toggled on, then clicking on a cell will move Karel to that location in the grid.
+
+You cannot add an obstacle to the same location that Karel is currently at. An alert will appear if you try to do so. You also cannot move Karel to a cell that has an obstacle on it already - the same alert will appear.
+
+An alert will pop up if you try to remove a beeper from a cell that has no beepers in it. The same goes for trying to remove an obstacle. If Karel tries to pick up a beeper from a cell that has no beepers in it, an alert will appear as well.
+
+Karel cannot move forward if an obstacle is blocking the direction it’s facing. An alert will appear if Karel “crashes” into an obstacle or wall (aka, it is trying to move forward when an obstacle or wall is in front of it). A crashing sound effect will also be played.
+
+Tapping on Karel will make it do a “happy dance” (a 3D rotation).
+
+There are five buttons at the bottom right corner of the screen that users can use to change the look of the beepers or obstacles in the world.
+
+Tapping on the trash icon will delete all the beepers and obstacles from the world. You can also drag a beeper - this will drag ALL the beepers in the world - to the trashcan to delete all the beepers in the world (the border of the trash icon will be highlighted in green to indicate that the user has successfully dragged the object to the trash). You can do the exact same for obstacles. The items will snap back in place if the user drags to anywhere else except the trash icon.
+
+Clicking on the “color palette” icon will change the color of all the beepers in the world. This change is animated. The colors rotate through a predetermined list of colors.
+
+Clicking on the “photo” icon will allow you to pick an image from your Camera Roll to use as the image for all the obstacles in the world.
+
+Clicking on the “camera” icon will allow you to use your camera to take a photo to use as the image for all the obstacles in the world.
+
+Clicking on the exclamation point will reset all the obstacles in the world to use the default image, which is an exclamation point.
+
+The app supports Dark Mode! Switch to Dark Mode to view the new look of the UI.
+
+The obstacle image, the color of the beepers, and Karel’s location and rotation are all purposefully NOT persistent.
+
+
+-------------------------------------------
+Required API Usage
+@ObservedObject: The view model for each Karel Playground is an Observed Object.
+
+@EnvironmentObject: The store that holds all the Karel Playgrounds is passed as an Environment Object. So is the Device Orientation.
+
+@State: Used in many places, such as keeping track of Karel’s location and direction, current color of the buttons, which world builder buttons are toggled on/off, etc.
+
+@Binding: Used in many places, most prominently, to bind data from the KarelWorldView to the GridView so that buttons pressed in KarelWorldView will affect the state of the GridView.
+
+@Environment: Used to determine what colors to use in the UI, depending on whether the color scheme of the device is in Dark Mode or not.
+
+@Published: Changes to the Playground model instances are published. So are changes to the device’s orientation.
+
+Publisher: The KarelWorldView uses .onReceive to listen to the device orientation Publisher in order to re-calculate the coordinates of the trash icon when the device orientation changes. Also, the Playground Store uses a Publisher to autosave any changes to its dictionary which maps Karel playgrounds to their names.
+
+Numerous controls (Button, Toggle, Stepper, Slider, Picker, etc): Buttons are used for each Karel function (for example, move(), turn_left(), etc), as well as the world builder functions (Add Beeper, Remove Obstacle, etc). Steppers are used to allow users to edit the world’s dimension.
+
+TextField: The user can edit the name of each “playground” using a TextField.
+
+Image: The blue buttons at the bottom of the screen use Images as their labels. Images are also used as the view for the obstacles. The user can choose an image from their camera roll, by taking an actual photo with their camera, or by using the default image.
+
+GeometryReader: GeometryReader is used throughout the app to determine the relative sizes of the buttons on the screen as well the size of the grid. 
+
+NavigationView: NavigationView is used to navigate from the list of all available playgrounds, to opening up the playground that the user taps on. The user will also be able to navigate back to the list of playground options.
+
+Form or List (or both): I use a list to display all the playgrounds a user has created, and a form to allow users to edit those worlds (to set the dimensions and the name of the Karel world).
+
+Gesture (more than just .onTapGesture or .onLongPressGesture): I use a DragGesture to allow users to drag beepers or obstacles to the trashcan icon in order to delete them.
+
+A custom ViewModifier: I created a custom ViewModifier that will make any content it is given look like an “obstacle” in the Karel world by putting the content in a prohibition sign.
+
+A custom Shape: Karel is drawn as a custom Shape. Beepers are drawn as a custom Shape. The red diagonal line across the obstacles is a custom Shape.
+
+An Animatable (either ViewModifier or Shape): The beepers are an Animatable Shape. Specifically, they are animated to “expand”. This allows the color change of the beepers to be animated.
+
+Implicit Animation: Karel’s rotation changes are implicitly animated.
+
+Explicit Animation: Tapping on Karel will cause it to do a “happy dance” animation using explicit animation.
+
+A modal sheet, popover, alert, or action sheet: A model sheet appears to allow users to edit basic information about their world using a Form. In addition, alerts are shown when Karel crashes into a wall/obstacle, when a beeper/obstacle is removed from a cell that doesn’t contain a beeper/obstacle there, or when trying to move Karel to an obstacle location (and vice versa).
+
+UserDefaults: The different worlds (i.e. playgrounds) are persistent through UserDefaults. Specifically, only the name, dimensions, and location of beepers/obstacles are persistent.
+
+UI must look good in all sizes/orientations on either all iPads or iPhones: The app works well on iPads because they are larger, but can be used on iPhones as well.
+
+
+----------------------------------------------
+Your Choice API Usage
+
+Sound effects: Every time Karel crashes into a wall or an obstacle, a “crashing” sound effect is played.
+
+UIKit API (Camera): Clicking on the blue “camera” button at the bottom of the screen allows the user to take a picture with the Camera to set as the image for the obstacles in the world.

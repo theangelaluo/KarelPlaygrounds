@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		670AFEBC2478E0450071E0CC /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670AFEBB2478E0450071E0CC /* GridView.swift */; };
+		670AFEC2247919200071E0CC /* PlaygroundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670AFEC1247919200071E0CC /* PlaygroundModel.swift */; };
+		670AFEC424791B730071E0CC /* PlaygroundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670AFEC324791B730071E0CC /* PlaygroundViewModel.swift */; };
+		670AFECC2479F3170071E0CC /* crash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 670AFECB2479F3170071E0CC /* crash.mp3 */; };
+		670AFECE2479F3360071E0CC /* PlayCrashSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670AFECD2479F3360071E0CC /* PlayCrashSound.swift */; };
+		670AFED0247C56F30071E0CC /* PlaygroundStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670AFECF247C56F30071E0CC /* PlaygroundStore.swift */; };
+		670AFED2247C57D20071E0CC /* PlaygroundChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670AFED1247C57D20071E0CC /* PlaygroundChooser.swift */; };
+		671990C3248062F300F65094 /* AnimatableBeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671990C2248062F300F65094 /* AnimatableBeeper.swift */; };
+		6779895A248F774E00D3EC6C /* KarelOutline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67798959248F774E00D3EC6C /* KarelOutline.swift */; };
+		67C9B1D0247CDE3A009E754A /* PlaygroundListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C9B1CF247CDE3A009E754A /* PlaygroundListView.swift */; };
+		67C9B1D2247CE020009E754A /* PlaygroundEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C9B1D1247CE020009E754A /* PlaygroundEditor.swift */; };
+		67C9B1D4247D23DC009E754A /* ObstacleViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C9B1D3247D23DC009E754A /* ObstacleViewModifier.swift */; };
+		67C9B1D6247D2918009E754A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C9B1D5247D2918009E754A /* ImagePicker.swift */; };
+		67D234FF2473ABE800DEB5B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D234FE2473ABE800DEB5B5 /* AppDelegate.swift */; };
+		67D235012473ABE800DEB5B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D235002473ABE800DEB5B5 /* SceneDelegate.swift */; };
+		67D235032473ABE800DEB5B5 /* KarelWorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D235022473ABE800DEB5B5 /* KarelWorldView.swift */; };
+		67D235052473ABEB00DEB5B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67D235042473ABEB00DEB5B5 /* Assets.xcassets */; };
+		67D235082473ABEB00DEB5B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67D235072473ABEB00DEB5B5 /* Preview Assets.xcassets */; };
+		67D2350B2473ABEB00DEB5B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D235092473ABEB00DEB5B5 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		670AFEBB2478E0450071E0CC /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		670AFEC1247919200071E0CC /* PlaygroundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundModel.swift; sourceTree = "<group>"; };
+		670AFEC324791B730071E0CC /* PlaygroundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundViewModel.swift; sourceTree = "<group>"; };
+		670AFECB2479F3170071E0CC /* crash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crash.mp3; sourceTree = "<group>"; };
+		670AFECD2479F3360071E0CC /* PlayCrashSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayCrashSound.swift; sourceTree = "<group>"; };
+		670AFECF247C56F30071E0CC /* PlaygroundStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundStore.swift; sourceTree = "<group>"; };
+		670AFED1247C57D20071E0CC /* PlaygroundChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundChooser.swift; sourceTree = "<group>"; };
+		671990C2248062F300F65094 /* AnimatableBeeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableBeeper.swift; sourceTree = "<group>"; };
+		67798959248F774E00D3EC6C /* KarelOutline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KarelOutline.swift; sourceTree = "<group>"; };
+		67C9B1CF247CDE3A009E754A /* PlaygroundListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundListView.swift; sourceTree = "<group>"; };
+		67C9B1D1247CE020009E754A /* PlaygroundEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundEditor.swift; sourceTree = "<group>"; };
+		67C9B1D3247D23DC009E754A /* ObstacleViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObstacleViewModifier.swift; sourceTree = "<group>"; };
+		67C9B1D5247D2918009E754A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		67D234FB2473ABE800DEB5B5 /* KarelPlaygrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KarelPlaygrounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67D234FE2473ABE800DEB5B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		67D235002473ABE800DEB5B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		67D235022473ABE800DEB5B5 /* KarelWorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarelWorldView.swift; sourceTree = "<group>"; };
+		67D235042473ABEB00DEB5B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67D235072473ABEB00DEB5B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		67D2350A2473ABEB00DEB5B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		67D2350C2473ABEB00DEB5B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67D234F82473ABE800DEB5B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67D234F22473ABE800DEB5B5 = {
+			isa = PBXGroup;
+			children = (
+				67D234FD2473ABE800DEB5B5 /* KarelPlaygrounds */,
+				67D234FC2473ABE800DEB5B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		67D234FC2473ABE800DEB5B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67D234FB2473ABE800DEB5B5 /* KarelPlaygrounds.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67D234FD2473ABE800DEB5B5 /* KarelPlaygrounds */ = {
+			isa = PBXGroup;
+			children = (
+				67D235022473ABE800DEB5B5 /* KarelWorldView.swift */,
+				670AFEBB2478E0450071E0CC /* GridView.swift */,
+				670AFECD2479F3360071E0CC /* PlayCrashSound.swift */,
+				670AFEC1247919200071E0CC /* PlaygroundModel.swift */,
+				670AFECF247C56F30071E0CC /* PlaygroundStore.swift */,
+				670AFED1247C57D20071E0CC /* PlaygroundChooser.swift */,
+				67C9B1CF247CDE3A009E754A /* PlaygroundListView.swift */,
+				67C9B1D1247CE020009E754A /* PlaygroundEditor.swift */,
+				67C9B1D5247D2918009E754A /* ImagePicker.swift */,
+				67C9B1D3247D23DC009E754A /* ObstacleViewModifier.swift */,
+				670AFEC324791B730071E0CC /* PlaygroundViewModel.swift */,
+				671990C2248062F300F65094 /* AnimatableBeeper.swift */,
+				67D234FE2473ABE800DEB5B5 /* AppDelegate.swift */,
+				67D235002473ABE800DEB5B5 /* SceneDelegate.swift */,
+				67798959248F774E00D3EC6C /* KarelOutline.swift */,
+				670AFECB2479F3170071E0CC /* crash.mp3 */,
+				67D235042473ABEB00DEB5B5 /* Assets.xcassets */,
+				67D235092473ABEB00DEB5B5 /* LaunchScreen.storyboard */,
+				67D2350C2473ABEB00DEB5B5 /* Info.plist */,
+				67D235062473ABEB00DEB5B5 /* Preview Content */,
+			);
+			path = KarelPlaygrounds;
+			sourceTree = "<group>";
+		};
+		67D235062473ABEB00DEB5B5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				67D235072473ABEB00DEB5B5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67D234FA2473ABE800DEB5B5 /* KarelPlaygrounds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67D2350F2473ABEB00DEB5B5 /* Build configuration list for PBXNativeTarget "KarelPlaygrounds" */;
+			buildPhases = (
+				67D234F72473ABE800DEB5B5 /* Sources */,
+				67D234F82473ABE800DEB5B5 /* Frameworks */,
+				67D234F92473ABE800DEB5B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KarelPlaygrounds;
+			productName = KarelPlaygrounds;
+			productReference = 67D234FB2473ABE800DEB5B5 /* KarelPlaygrounds.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		67D234F32473ABE800DEB5B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Angela Luo";
+				TargetAttributes = {
+					67D234FA2473ABE800DEB5B5 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 67D234F62473ABE800DEB5B5 /* Build configuration list for PBXProject "KarelPlaygrounds" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 67D234F22473ABE800DEB5B5;
+			productRefGroup = 67D234FC2473ABE800DEB5B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67D234FA2473ABE800DEB5B5 /* KarelPlaygrounds */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		67D234F92473ABE800DEB5B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				670AFECC2479F3170071E0CC /* crash.mp3 in Resources */,
+				67D2350B2473ABEB00DEB5B5 /* LaunchScreen.storyboard in Resources */,
+				67D235082473ABEB00DEB5B5 /* Preview Assets.xcassets in Resources */,
+				67D235052473ABEB00DEB5B5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67D234F72473ABE800DEB5B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				670AFED0247C56F30071E0CC /* PlaygroundStore.swift in Sources */,
+				670AFECE2479F3360071E0CC /* PlayCrashSound.swift in Sources */,
+				671990C3248062F300F65094 /* AnimatableBeeper.swift in Sources */,
+				67D234FF2473ABE800DEB5B5 /* AppDelegate.swift in Sources */,
+				67C9B1D0247CDE3A009E754A /* PlaygroundListView.swift in Sources */,
+				67C9B1D4247D23DC009E754A /* ObstacleViewModifier.swift in Sources */,
+				670AFEC424791B730071E0CC /* PlaygroundViewModel.swift in Sources */,
+				67D235012473ABE800DEB5B5 /* SceneDelegate.swift in Sources */,
+				67C9B1D2247CE020009E754A /* PlaygroundEditor.swift in Sources */,
+				67D235032473ABE800DEB5B5 /* KarelWorldView.swift in Sources */,
+				670AFEBC2478E0450071E0CC /* GridView.swift in Sources */,
+				670AFEC2247919200071E0CC /* PlaygroundModel.swift in Sources */,
+				6779895A248F774E00D3EC6C /* KarelOutline.swift in Sources */,
+				67C9B1D6247D2918009E754A /* ImagePicker.swift in Sources */,
+				670AFED2247C57D20071E0CC /* PlaygroundChooser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		67D235092473ABEB00DEB5B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67D2350A2473ABEB00DEB5B5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		67D2350D2473ABEB00DEB5B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		67D2350E2473ABEB00DEB5B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67D235102473ABEB00DEB5B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"KarelPlaygrounds/Preview Content\"";
+				DEVELOPMENT_TEAM = C5XKLL2KX8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = KarelPlaygrounds/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.angluo.KarelPlaygrounds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		67D235112473ABEB00DEB5B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"KarelPlaygrounds/Preview Content\"";
+				DEVELOPMENT_TEAM = C5XKLL2KX8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = KarelPlaygrounds/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.angluo.KarelPlaygrounds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		67D234F62473ABE800DEB5B5 /* Build configuration list for PBXProject "KarelPlaygrounds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67D2350D2473ABEB00DEB5B5 /* Debug */,
+				67D2350E2473ABEB00DEB5B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67D2350F2473ABEB00DEB5B5 /* Build configuration list for PBXNativeTarget "KarelPlaygrounds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67D235102473ABEB00DEB5B5 /* Debug */,
+				67D235112473ABEB00DEB5B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 67D234F32473ABE800DEB5B5 /* Project object */;
+}
